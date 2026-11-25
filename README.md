@@ -1,0 +1,1 @@
+# ChatGPT-Decorator2.-
