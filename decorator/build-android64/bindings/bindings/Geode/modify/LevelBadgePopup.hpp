@@ -1,0 +1,122 @@
+#pragma once
+#include <Geode/modify/Modify.hpp>
+#include <Geode/modify/Field.hpp>
+#include <Geode/modify/Codegen.hpp>
+#include <Geode/binding/LevelBadgePopup.hpp>
+using namespace geode::modifier;
+
+namespace geode::modifier {
+    
+	#ifndef GEODE_STATICS_create
+		#define GEODE_STATICS_create
+		GEODE_AS_STATIC_FUNCTION(create) 
+	#endif
+
+	#ifndef GEODE_STATICS_ccTouchBegan
+		#define GEODE_STATICS_ccTouchBegan
+		GEODE_AS_STATIC_FUNCTION(ccTouchBegan) 
+	#endif
+
+	#ifndef GEODE_STATICS_keyBackClicked
+		#define GEODE_STATICS_keyBackClicked
+		GEODE_AS_STATIC_FUNCTION(keyBackClicked) 
+	#endif
+
+	#ifndef GEODE_STATICS_show
+		#define GEODE_STATICS_show
+		GEODE_AS_STATIC_FUNCTION(show) 
+	#endif
+
+	#ifndef GEODE_STATICS_loadLevelsFinished
+		#define GEODE_STATICS_loadLevelsFinished
+		GEODE_AS_STATIC_FUNCTION(loadLevelsFinished) 
+	#endif
+
+	#ifndef GEODE_STATICS_loadLevelsFailed
+		#define GEODE_STATICS_loadLevelsFailed
+		GEODE_AS_STATIC_FUNCTION(loadLevelsFailed) 
+	#endif
+
+	#ifndef GEODE_STATICS_buildCell
+		#define GEODE_STATICS_buildCell
+		GEODE_AS_STATIC_FUNCTION(buildCell) 
+	#endif
+
+	#ifndef GEODE_STATICS_init
+		#define GEODE_STATICS_init
+		GEODE_AS_STATIC_FUNCTION(init) 
+	#endif
+
+	#ifndef GEODE_STATICS_onClose
+		#define GEODE_STATICS_onClose
+		GEODE_AS_STATIC_FUNCTION(onClose) 
+	#endif
+
+    
+	#ifndef GEODE_CONCEPT_CHECK_create
+		#define GEODE_CONCEPT_CHECK_create
+		GEODE_CONCEPT_FUNCTION_CHECK(create) 
+	#endif
+
+	#ifndef GEODE_CONCEPT_CHECK_ccTouchBegan
+		#define GEODE_CONCEPT_CHECK_ccTouchBegan
+		GEODE_CONCEPT_FUNCTION_CHECK(ccTouchBegan) 
+	#endif
+
+	#ifndef GEODE_CONCEPT_CHECK_keyBackClicked
+		#define GEODE_CONCEPT_CHECK_keyBackClicked
+		GEODE_CONCEPT_FUNCTION_CHECK(keyBackClicked) 
+	#endif
+
+	#ifndef GEODE_CONCEPT_CHECK_show
+		#define GEODE_CONCEPT_CHECK_show
+		GEODE_CONCEPT_FUNCTION_CHECK(show) 
+	#endif
+
+	#ifndef GEODE_CONCEPT_CHECK_loadLevelsFinished
+		#define GEODE_CONCEPT_CHECK_loadLevelsFinished
+		GEODE_CONCEPT_FUNCTION_CHECK(loadLevelsFinished) 
+	#endif
+
+	#ifndef GEODE_CONCEPT_CHECK_loadLevelsFailed
+		#define GEODE_CONCEPT_CHECK_loadLevelsFailed
+		GEODE_CONCEPT_FUNCTION_CHECK(loadLevelsFailed) 
+	#endif
+
+	#ifndef GEODE_CONCEPT_CHECK_buildCell
+		#define GEODE_CONCEPT_CHECK_buildCell
+		GEODE_CONCEPT_FUNCTION_CHECK(buildCell) 
+	#endif
+
+	#ifndef GEODE_CONCEPT_CHECK_init
+		#define GEODE_CONCEPT_CHECK_init
+		GEODE_CONCEPT_FUNCTION_CHECK(init) 
+	#endif
+
+	#ifndef GEODE_CONCEPT_CHECK_onClose
+		#define GEODE_CONCEPT_CHECK_onClose
+		GEODE_CONCEPT_FUNCTION_CHECK(onClose) 
+	#endif
+
+
+	template<class Der>
+	struct ModifyDerive<Der, LevelBadgePopup> : ModifyBase<ModifyDerive<Der, LevelBadgePopup>> {
+        using BaseModify = ModifyBase<ModifyDerive<Der, LevelBadgePopup>>;
+		using ModifyBase<ModifyDerive<Der, LevelBadgePopup>>::ModifyBase;
+		using Base = LevelBadgePopup;
+        using Derived = Der;
+		void apply() override {
+
+			GEODE_APPLY_MODIFY_FOR_DESTRUCTOR(reinterpret_cast<uintptr_t>(dlsym(dlopen("libcocos2dcpp.so", RTLD_NOW), "_ZN15LevelBadgePopupD2Ev")), Default, LevelBadgePopup)
+			GEODE_APPLY_MODIFY_FOR_FUNCTION(addresser::getNonVirtual(Resolve<int, bool>::func(&LevelBadgePopup::create)), Default, LevelBadgePopup, create, int, bool)
+			GEODE_APPLY_MODIFY_FOR_FUNCTION(addresser::getVirtual(Resolve<cocos2d::CCTouch*, cocos2d::CCEvent*>::func(&LevelBadgePopup::ccTouchBegan)), Default, LevelBadgePopup, ccTouchBegan, cocos2d::CCTouch*, cocos2d::CCEvent*)
+			GEODE_APPLY_MODIFY_FOR_FUNCTION(addresser::getVirtual(Resolve<>::func(&LevelBadgePopup::keyBackClicked)), Default, LevelBadgePopup, keyBackClicked, )
+			GEODE_APPLY_MODIFY_FOR_FUNCTION(addresser::getVirtual(Resolve<>::func(&LevelBadgePopup::show)), Default, LevelBadgePopup, show, )
+			GEODE_APPLY_MODIFY_FOR_FUNCTION(addresser::getVirtual(Resolve<cocos2d::CCArray*, char const*, int>::func(&LevelBadgePopup::loadLevelsFinished)), Default, LevelBadgePopup, loadLevelsFinished, cocos2d::CCArray*, char const*, int)
+			GEODE_APPLY_MODIFY_FOR_FUNCTION(addresser::getVirtual(Resolve<char const*, int>::func(&LevelBadgePopup::loadLevelsFailed)), Default, LevelBadgePopup, loadLevelsFailed, char const*, int)
+			GEODE_APPLY_MODIFY_FOR_FUNCTION(addresser::getNonVirtual(Resolve<cocos2d::CCObject*>::func(&LevelBadgePopup::buildCell)), Default, LevelBadgePopup, buildCell, cocos2d::CCObject*)
+			GEODE_APPLY_MODIFY_FOR_FUNCTION(addresser::getNonVirtual(Resolve<int, bool>::func(&LevelBadgePopup::init)), Default, LevelBadgePopup, init, int, bool)
+			GEODE_APPLY_MODIFY_FOR_FUNCTION(addresser::getNonVirtual(Resolve<cocos2d::CCObject*>::func(&LevelBadgePopup::onClose)), Default, LevelBadgePopup, onClose, cocos2d::CCObject*)
+		}
+	};
+}

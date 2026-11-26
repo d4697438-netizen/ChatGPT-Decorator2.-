@@ -1,0 +1,23 @@
+#pragma once
+#include <Geode/modify/Modify.hpp>
+#include <Geode/modify/Field.hpp>
+#include <Geode/modify/Codegen.hpp>
+#include <Geode/binding/AdminReportedEntry.hpp>
+using namespace geode::modifier;
+
+namespace geode::modifier {
+    
+    
+
+	template<class Der>
+	struct ModifyDerive<Der, AdminReportedEntry> : ModifyBase<ModifyDerive<Der, AdminReportedEntry>> {
+        using BaseModify = ModifyBase<ModifyDerive<Der, AdminReportedEntry>>;
+		using ModifyBase<ModifyDerive<Der, AdminReportedEntry>>::ModifyBase;
+		using Base = AdminReportedEntry;
+        using Derived = Der;
+		void apply() override {
+
+			GEODE_APPLY_MODIFY_FOR_DESTRUCTOR(reinterpret_cast<uintptr_t>(dlsym(dlopen("libcocos2dcpp.so", RTLD_NOW), "_ZN18AdminReportedEntryD2Ev")), Default, AdminReportedEntry)
+		}
+	};
+}

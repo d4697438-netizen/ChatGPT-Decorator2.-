@@ -1,0 +1,78 @@
+#pragma once
+#include <Geode/modify/Modify.hpp>
+#include <Geode/modify/Field.hpp>
+#include <Geode/modify/Codegen.hpp>
+#include <Geode/binding/SetupCollisionTriggerPopup.hpp>
+using namespace geode::modifier;
+
+namespace geode::modifier {
+    
+	#ifndef GEODE_STATICS_create
+		#define GEODE_STATICS_create
+		GEODE_AS_STATIC_FUNCTION(create) 
+	#endif
+
+	#ifndef GEODE_STATICS_updateDefaultTriggerValues
+		#define GEODE_STATICS_updateDefaultTriggerValues
+		GEODE_AS_STATIC_FUNCTION(updateDefaultTriggerValues) 
+	#endif
+
+	#ifndef GEODE_STATICS_valueDidChange
+		#define GEODE_STATICS_valueDidChange
+		GEODE_AS_STATIC_FUNCTION(valueDidChange) 
+	#endif
+
+	#ifndef GEODE_STATICS_init
+		#define GEODE_STATICS_init
+		GEODE_AS_STATIC_FUNCTION(init) 
+	#endif
+
+	#ifndef GEODE_STATICS_updateSpecialNodes
+		#define GEODE_STATICS_updateSpecialNodes
+		GEODE_AS_STATIC_FUNCTION(updateSpecialNodes) 
+	#endif
+
+    
+	#ifndef GEODE_CONCEPT_CHECK_create
+		#define GEODE_CONCEPT_CHECK_create
+		GEODE_CONCEPT_FUNCTION_CHECK(create) 
+	#endif
+
+	#ifndef GEODE_CONCEPT_CHECK_updateDefaultTriggerValues
+		#define GEODE_CONCEPT_CHECK_updateDefaultTriggerValues
+		GEODE_CONCEPT_FUNCTION_CHECK(updateDefaultTriggerValues) 
+	#endif
+
+	#ifndef GEODE_CONCEPT_CHECK_valueDidChange
+		#define GEODE_CONCEPT_CHECK_valueDidChange
+		GEODE_CONCEPT_FUNCTION_CHECK(valueDidChange) 
+	#endif
+
+	#ifndef GEODE_CONCEPT_CHECK_init
+		#define GEODE_CONCEPT_CHECK_init
+		GEODE_CONCEPT_FUNCTION_CHECK(init) 
+	#endif
+
+	#ifndef GEODE_CONCEPT_CHECK_updateSpecialNodes
+		#define GEODE_CONCEPT_CHECK_updateSpecialNodes
+		GEODE_CONCEPT_FUNCTION_CHECK(updateSpecialNodes) 
+	#endif
+
+
+	template<class Der>
+	struct ModifyDerive<Der, SetupCollisionTriggerPopup> : ModifyBase<ModifyDerive<Der, SetupCollisionTriggerPopup>> {
+        using BaseModify = ModifyBase<ModifyDerive<Der, SetupCollisionTriggerPopup>>;
+		using ModifyBase<ModifyDerive<Der, SetupCollisionTriggerPopup>>::ModifyBase;
+		using Base = SetupCollisionTriggerPopup;
+        using Derived = Der;
+		void apply() override {
+
+			GEODE_APPLY_MODIFY_FOR_DESTRUCTOR(reinterpret_cast<uintptr_t>(dlsym(dlopen("libcocos2dcpp.so", RTLD_NOW), "_ZN26SetupCollisionTriggerPopupD2Ev")), Default, SetupCollisionTriggerPopup)
+			GEODE_APPLY_MODIFY_FOR_FUNCTION(addresser::getNonVirtual(Resolve<EffectGameObject*, cocos2d::CCArray*>::func(&SetupCollisionTriggerPopup::create)), Default, SetupCollisionTriggerPopup, create, EffectGameObject*, cocos2d::CCArray*)
+			GEODE_APPLY_MODIFY_FOR_FUNCTION(addresser::getVirtual(Resolve<>::func(&SetupCollisionTriggerPopup::updateDefaultTriggerValues)), Default, SetupCollisionTriggerPopup, updateDefaultTriggerValues, )
+			GEODE_APPLY_MODIFY_FOR_FUNCTION(addresser::getVirtual(Resolve<int, float>::func(&SetupCollisionTriggerPopup::valueDidChange)), Default, SetupCollisionTriggerPopup, valueDidChange, int, float)
+			GEODE_APPLY_MODIFY_FOR_FUNCTION(addresser::getNonVirtual(Resolve<EffectGameObject*, cocos2d::CCArray*>::func(&SetupCollisionTriggerPopup::init)), Default, SetupCollisionTriggerPopup, init, EffectGameObject*, cocos2d::CCArray*)
+			GEODE_APPLY_MODIFY_FOR_FUNCTION(addresser::getNonVirtual(Resolve<>::func(&SetupCollisionTriggerPopup::updateSpecialNodes)), Default, SetupCollisionTriggerPopup, updateSpecialNodes, )
+		}
+	};
+}

@@ -1,0 +1,2 @@
+/home/codespace/Android/Sdk/ndk/28.1.13356709/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar qc libarc.a CMakeFiles/arc.dir/Unity/unity_0_cxx.cxx.o
+/home/codespace/Android/Sdk/ndk/28.1.13356709/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib libarc.a

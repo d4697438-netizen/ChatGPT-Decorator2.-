@@ -1,0 +1,2 @@
+/home/codespace/Android/Sdk/ndk/28.1.13356709/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar qc libfmt-c.a "CMakeFiles/fmt-c.dir/src/fmt-c.cc.o"
+/home/codespace/Android/Sdk/ndk/28.1.13356709/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib libfmt-c.a

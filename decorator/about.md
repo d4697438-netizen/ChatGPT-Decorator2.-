@@ -1,0 +1,1 @@
+Experimental starter project for ChatGPT Decorator. v1.0 is a menu-button prototype.

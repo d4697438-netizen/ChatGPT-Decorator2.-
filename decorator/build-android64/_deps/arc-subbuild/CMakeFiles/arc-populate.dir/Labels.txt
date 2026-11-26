@@ -1,0 +1,14 @@
+# Target labels
+ arc-populate
+# Source files and their labels
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/arc-subbuild/CMakeFiles/arc-populate
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/arc-subbuild/CMakeFiles/arc-populate.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/arc-subbuild/CMakeFiles/arc-populate-complete.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/arc-subbuild/arc-populate-prefix/src/arc-populate-stamp/arc-populate-build.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/arc-subbuild/arc-populate-prefix/src/arc-populate-stamp/arc-populate-configure.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/arc-subbuild/arc-populate-prefix/src/arc-populate-stamp/arc-populate-download.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/arc-subbuild/arc-populate-prefix/src/arc-populate-stamp/arc-populate-install.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/arc-subbuild/arc-populate-prefix/src/arc-populate-stamp/arc-populate-mkdir.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/arc-subbuild/arc-populate-prefix/src/arc-populate-stamp/arc-populate-patch.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/arc-subbuild/arc-populate-prefix/src/arc-populate-stamp/arc-populate-test.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/arc-subbuild/arc-populate-prefix/src/arc-populate-stamp/arc-populate-update.rule

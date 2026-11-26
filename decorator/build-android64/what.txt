@@ -1,0 +1,12 @@
+{
+  "geode": "6.0.0",
+  "gd": {
+    "android": "2.2091",
+    "win": "2.2091"
+  },
+  "id": "chatgpt.decorator",
+  "name": "ChatGPT Decorator",
+  "version": "v1.0.0",
+  "developer": "ChatGPT",
+  "description": "An experimental AI-assisted decoration helper for Geometry Dash."
+}

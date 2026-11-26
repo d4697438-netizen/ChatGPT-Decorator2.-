@@ -1,0 +1,14 @@
+# Target labels
+ asp2-populate
+# Source files and their labels
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/asp2-subbuild/CMakeFiles/asp2-populate
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/asp2-subbuild/CMakeFiles/asp2-populate.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/asp2-subbuild/CMakeFiles/asp2-populate-complete.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/asp2-subbuild/asp2-populate-prefix/src/asp2-populate-stamp/asp2-populate-build.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/asp2-subbuild/asp2-populate-prefix/src/asp2-populate-stamp/asp2-populate-configure.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/asp2-subbuild/asp2-populate-prefix/src/asp2-populate-stamp/asp2-populate-download.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/asp2-subbuild/asp2-populate-prefix/src/asp2-populate-stamp/asp2-populate-install.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/asp2-subbuild/asp2-populate-prefix/src/asp2-populate-stamp/asp2-populate-mkdir.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/asp2-subbuild/asp2-populate-prefix/src/asp2-populate-stamp/asp2-populate-patch.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/asp2-subbuild/asp2-populate-prefix/src/asp2-populate-stamp/asp2-populate-test.rule
+/workspaces/ChatGPT-Decorator2.-/decorator/build-android64/_deps/asp2-subbuild/asp2-populate-prefix/src/asp2-populate-stamp/asp2-populate-update.rule
